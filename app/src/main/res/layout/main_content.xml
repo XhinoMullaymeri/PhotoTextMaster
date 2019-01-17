@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:scrollbars="vertical"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+
+    <!--<Button-->
+    <!--android:id="@+id/savebtn"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_marginEnd="50dp"-->
+    <!--android:text="save"-->
+    <!--android:visibility="invisible"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/uploadbtn"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="50dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:text="upload"-->
+    <!--android:visibility="invisible"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:background="@drawable/main_header_selector"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/main_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/uploadbtn"
+            android:layout_width="39dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="41dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/bcloud"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/copytextbtn"
+            android:layout_width="39dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/bcopy"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/uploadbtn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/savebtn"
+            android:layout_width="39dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/bsave"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/copytextbtn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/backToLogIn"
+            android:layout_width="39dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="41dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/bexit"
+            app:layout_constraintStart_toEndOf="@+id/savebtn"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/image_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/main_header_selector"
+        android:gravity="center"
+        android:maxLines="15"
+        android:text="Use the floating action button."
+        android:textColor="@color/black"
+        android:textIsSelectable="true"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_image" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="180dp"
+        android:indeterminate="true"
+        android:indeterminateTint="#102814"
+        android:indeterminateTintMode="src_atop"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_image" />
+
+    <ImageView
+        android:id="@+id/main_image"
+        android:layout_width="383dp"
+        android:layout_height="247dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
+
+

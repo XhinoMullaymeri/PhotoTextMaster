@@ -15,8 +15,8 @@ Then you can copy the text, save it in a txt file , or translate it (swap the sc
 
 
 
-READ ME !!!
-You've to change the API_KEY value at the BuildConfig.java
+# READ ME !!!
+# You've to change the API_KEY value at the BuildConfig.java
 
 
 During this implementation i got ideas/help from
